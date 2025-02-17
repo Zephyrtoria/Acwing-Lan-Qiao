@@ -45,7 +45,7 @@ public class Main {
 
     private static int binarySearch(int n, int m) {
         // left从0开始，因为可能所有订单都不满足
-        int left = 0, right = m;
+        int left = 0, right = m;    // 左右应该是都能取到的值
         // 要找能够满足条件的最大的k
         while (left < right) {
             // left == mid就要上一位；right == mid就不用
