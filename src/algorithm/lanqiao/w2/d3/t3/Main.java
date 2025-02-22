@@ -5,7 +5,7 @@
  * @Version: 1.0
  */
 
-package algorithm.lanqiao.w2.d2.t3;
+package algorithm.lanqiao.w2.d3.t3;
 
 import java.util.*;
 
