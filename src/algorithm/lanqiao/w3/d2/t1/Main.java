@@ -12,8 +12,10 @@ import java.util.*;
 public class Main {
     static final int N = 5010;
     static Pair[] pairs = new Pair[N];
+
     static class Pair implements Comparable<Pair> {
         int l, r;
+
         public Pair(int l, int r) {
             this.l = l;
             this.r = r;
