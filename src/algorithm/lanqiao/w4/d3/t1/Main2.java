@@ -107,22 +107,3 @@ public class Main2 {
     }
 }
 
-class Reader {
-    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    static StringTokenizer token = new StringTokenizer("");
-
-    public static String nextLine() throws Exception {
-        return br.readLine();
-    }
-
-    public static String next() throws Exception {
-        while (!token.hasMoreTokens()) {
-            token = new StringTokenizer(nextLine());
-        }
-        return token.nextToken();
-    }
-
-    public static Integer nextInt() throws Exception {
-        return Integer.parseInt(next());
-    }
-}
