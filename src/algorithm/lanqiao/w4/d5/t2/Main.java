@@ -18,15 +18,11 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             // 栈空
-            if (top == -1) {
-                System.out.printf("%d ", -1);
-            } else {
-                // 应当维护单调递增的栈
-                while (top >= 0 && q[top] >= arr[i]) {
-                    top--;
-                }
-                System.out.printf("%d ", top == -1 ? -1 : q[top]);
+            // 应当维护单调递增的栈
+            while (top >= 0 && q[top] >= arr[i]) {
+                top--;
             }
+            System.out.printf("%d ", top == -1 ? -1 : q[top]);
             q[++top] = arr[i];
         }
     }
