@@ -4,7 +4,6 @@ import java.util.*;
 
 public class Main {
     static final int N = 3005;
-    static final int M = 30010;
     // 高度
     static int[][] h = new int[N][N];
     static int R, C;
