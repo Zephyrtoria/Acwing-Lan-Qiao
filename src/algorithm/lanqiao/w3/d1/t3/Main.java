@@ -16,7 +16,7 @@ public class Main {
         char[] ch;
         for (int y = y1; y <= y2; y++) {
             ch = new char[8];
-            int re = 0, temp = y;
+            int temp = y;
             for (int i = 3; i >= 0; i--) {
                 ch[i] = (char) (temp % 10 + '0');
                 temp /= 10;
