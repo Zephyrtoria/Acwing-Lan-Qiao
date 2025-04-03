@@ -21,6 +21,7 @@ public class Main {
                     g[i][j] = input.charAt(j) - '0';
                 }
             }
+
             System.out.printf("Case #%d:\n", t);
             int q = Reader.nextInt();
             for (int qq = 0; qq < q; qq++) {
