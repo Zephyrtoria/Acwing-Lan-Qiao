@@ -15,15 +15,15 @@ public class Main {
             s[i] += s[i - 1];
         }
 
-        cnt[0] = 1;
         long res = 0;
         for (int i = 1; i <= n; i++) {
-            int mod = (int) s[i] % k;
+            int mod = (int) (s[i] % k);
             // 先加上与Si模k相同的数
             res += cnt[mod];
             // 再递增
             cnt[mod]++;
         }
+        res += cnt[0];
         System.out.println(res);
     }
 }
